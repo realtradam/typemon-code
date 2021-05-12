@@ -1,0 +1,3 @@
+[submodule "sprites/non-free"]
+	path = sprites/non-free
+	url = gitea@git.tradam.fyi:tradam/pixel-assets-nonfree.git
