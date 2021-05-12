@@ -5,6 +5,6 @@ Spritual successor to the old pokemon games.
 
 You need to buy/download the [DragonRuby Game Toolkit](https://dragonruby.org/toolkit/game). Once you do download the zip and extract. Replace the "mygame" directory contents with the contents of this repository.
 
-Next you need to purchase some of the non-free assets used from [here](https://limezu.itch.io/moderninteriors) and place them into the sprites/non-free directory in this repo.
+Next you need to purchase some of the non-free assets used from [here](https://limezu.itch.io/moderninteriors) as well as the free version of [this](https://limezu.itch.io/21rpg-battlers) and place them into the sprites/non-free directory in this repo(name one of the directories "Modern_Interiors" and the other "RPG_Battlers").
 
 Once that is done simply run the dragonruby executable from the DragonRuby Game Toolkit.
