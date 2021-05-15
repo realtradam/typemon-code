@@ -1,5 +1,7 @@
-require_relative './base_component'
-Dir[File.join(__dir__, 'components', '*.rb')].sort.each { |file| require file }
+require 'app/ECS/base_component.rb'
+
+require 'app/ECS/components/00_test_component.rb'
+require 'app/ECS/components/01_based.rb'
 
 class ECS
   class Components

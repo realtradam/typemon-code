@@ -1,4 +1,5 @@
-Dir[File.join(__dir__, 'systems', '*.rb')].sort.each { |file| require file }
+require 'app/ECS/systems/00_movement.rb'
+require 'app/ECS/systems/01_flying.rb'
 
 class ECS
   class Systems
