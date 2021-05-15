@@ -2,10 +2,14 @@ class ECS
   class Entity
     attr_accessor :id
 
-    def initialize(signature = 0)
+    def initialize(*signature)
+      final_signature = 0
+      signature.each do |sig|
+        final_signature += sig
+      end
       @id = ECS::Entity.generate_new_id
       self.class.all.push self
-      self.class.signatures.push signature
+      self.class.signatures.push final_signature
       ECS::Components.entity_created(@id)
     end
 

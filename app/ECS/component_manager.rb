@@ -1,7 +1,7 @@
-require 'app/ECS/base_component.rb'
+#require 'app/ECS/base_component.rb'
 
-require 'app/ECS/components/00_test_component.rb'
-require 'app/ECS/components/01_based.rb'
+#require 'app/ECS/components/00_test_component.rb'
+#require 'app/ECS/components/01_based.rb'
 
 class ECS
   class Components
