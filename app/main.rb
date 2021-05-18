@@ -7,6 +7,10 @@ def require_all dir
   end
 end
 
+require 'app/dragonruby-game-toolkit-contrib/dragon/grid.rb'
+
+require_all 'helpers'
+
 require 'app/ECS/signatures.rb'
 
 require 'app/ECS/entity_manager.rb'
