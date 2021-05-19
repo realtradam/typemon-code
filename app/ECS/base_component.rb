@@ -1,7 +1,6 @@
 class BaseComponent
   class <<self
     def id
-      #puts underscore(self.ancestors[0].name.split('::').last)
       @id ||= ID.send(ComponentHelper.underscore(ancestors[0].name.split('::').last))
     end
 

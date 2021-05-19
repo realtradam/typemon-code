@@ -1,10 +1,12 @@
 $gtk.args.grid.origin_top_left!
 #$gtk.args.grid.origin_bottom_left!
+#Components::DebugSingleton.data = true
 
 thing0 = Entity.new(ID.sprite,
-                         ID.renderable,
-                         ID.player_control)
-Components::Sprite.data[thing0.id].set(x: 0, y: 0, w: 128, h: 101, path: 'dragonruby.png')
+                    ID.renderable,
+                    ID.player_control)
+Components::Sprite.data[thing0.id].set(x: 256, y: 128, w: 64, h: 64, path: 'dragonruby.png')
+Components::Renderable.data[thing0.id].z = 10
 #Components::PlayerControl.data[thing0.id].set(north: 's', south: 'w')
 
 #@thing0 = Entity.new(ID.sprite,
@@ -35,16 +37,14 @@ Components::Sprite.data[thing0.id].set(x: 0, y: 0, w: 128, h: 101, path: 'dragon
 #Components::Sprite.data[thing0.id].set(x: 576, y:280,
 #                                       w:128, h: 101)
 @thing1 = Entity.new(ID.label, ID.renderable)
-Components::Label.data[@thing1.id].set(x: $gtk.args.grid.center[0], y: $gtk.args.grid.center[1],
-                                       text: $gtk.args.grid.center.inspect,
-                                       size_enum: 5,
-                                       alignment_enum: 1)
-Components::Renderable.data[@thing1.id].z = 5
-
-puts $gtk.args.grid.screen_y_direction.inspect
+#Components::Label.data[@thing1.id].set(x: $gtk.args.grid.center[0], y: $gtk.args.grid.center[1],
+#                                       text: $gtk.args.grid.center.inspect,
+#                                       size_enum: 5,
+#                                       alignment_enum: 1)
+#Components::Renderable.data[@thing1.id].z = 5
 
 @thing2 = Entity.new(ID.label, ID.renderable)
-Components::Label.data[@thing2.id].set(x: 640, y: 420,
+Components::Label.data[@thing2.id].set(x: 740, y: 520,
                                        text: 'It Werks',
                                        size_enum: 5,
                                        alignment_enum: 1)
@@ -67,11 +67,11 @@ Components::Renderable.data[@map2.id].z = 4
 
 
 #Helper.get_json_tiles('map_test')
-@x = 700 * 10
+@x = 0
 def tick args
   @x += 1
-  @y = (@x / 10).to_i
-  Components::Label.data[@thing2.id].text = (@y).to_i
+  @y = @x / 6
+  Components::Label.data[@thing2.id].text = "Seconds Passed: #{(@y.to_i).to_s.insert(-2,'.')}"
   Systems.constants.each do |constant|
     Systems.const_get(constant).run
   end

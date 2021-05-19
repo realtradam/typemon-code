@@ -4,7 +4,7 @@ class Components
     attr_accessor :z
 
     def initialize
-      @z = z
+      @z = 0
     end
 
     def set(**opts)
