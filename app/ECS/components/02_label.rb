@@ -7,17 +7,17 @@ class Components
 
     def set(x: @x, y: @y, text: @text, size_enum: @size_enum, alignment_enum: @alignment_enum,
             a: @a, r: @r, g: @g, b: @b, font: @font, vertical_alignment_enum: @vertical_alignment_enum)
-      [@x = x,
-       @y = y,
-       @text = text,
-       @size_enum = size_enum,
-       @alignment_enum = alignment_enum,
-       @r = r,
-       @g = g,
-       @b = b,
-       @a = a,
-       @font = font,
-       @vertical_alignment_enum = vertical_alignment_enum]
+      {x: @x = x,
+       y: @y = y,
+       text: @text = text,
+       size_enum: @size_enum = size_enum,
+       alignment_enum: @alignment_enum = alignment_enum,
+       r: @r = r,
+       g: @g = g,
+       b: @b = b,
+       a: @a = a,
+       font: @font = font,
+       vertical_alignment_enum: @vertical_alignment_enum = vertical_alignment_enum }
     end
 
     def primative_marker

@@ -1,0 +1,14 @@
+{ "columns":67,
+ "image":"..\/..\/Documents\/Ruby\/dragon\/dragonruby-linux-amd64\/mygame\/assets\/non-free\/Modern_Interiors\/1_Interiors\/16x16\/Room_Builder_16x16.png",
+ "imageheight":976,
+ "imagewidth":1072,
+ "margin":0,
+ "name":"tileset_Room_Builder_16x16",
+ "spacing":0,
+ "tilecount":4087,
+ "tiledversion":"1.6.0",
+ "tileheight":16,
+ "tilewidth":16,
+ "type":"tileset",
+ "version":"1.6"
+}
