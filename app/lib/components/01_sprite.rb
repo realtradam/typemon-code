@@ -1,6 +1,6 @@
 class Components
   # If an entity can be rendered on screen
-  class Sprite < BaseComponent
+  class Sprite < Helper::BaseComponent
 
     attr_accessor :x, :y, :w, :h, :path, :angle, :a, :r, :g, :b,
       :source_x, :source_y, :source_w, :source_h,

@@ -1,10 +1,10 @@
 class Components
-  # If an entity can be rendered on screen
-  class Interactable < BaseComponent
-    attr_accessor :z
+  class Overworld < Helper::Level
+    attr_accessor :x, :y
 
     def initialize
-      @z = z
+      @x = 0
+      @y = 0
     end
 
     def set(**opts)

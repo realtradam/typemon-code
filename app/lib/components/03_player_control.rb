@@ -1,13 +1,13 @@
 class Components
   # Gives control(keyboard or otherwise) over an object
-  class PlayerControl < BaseComponent
+  class PlayerControl < Helper::BaseComponent
     attr_accessor :north, :south, :east, :west, :interact, :menu
 
     def initialize
-      @north = 'w'
-      @south = 's'
-      @east = 'd'
-      @west = 'a'
+      @north = 'up'
+      @south = 'down'
+      @east = 'right'
+      @west = 'left'
       @interact = 'space'
       @menu = 'enter'
     end

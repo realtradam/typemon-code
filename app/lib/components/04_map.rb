@@ -1,6 +1,6 @@
 class Components
   # dragonruby label wrapper
-  class Map < BaseComponent
+  class Map < Helper::BaseComponent
 
     attr_accessor :json_name, :json, :x, :y, :tilewidth, :tileheight, :a, :r, :g, :b
 

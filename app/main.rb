@@ -9,18 +9,17 @@ end
 
 require 'app/dragonruby-game-toolkit-contrib/dragon/grid.rb'
 
-require_all 'helpers'
+require_all 'lib/helpers'
 
-require 'app/ECS/signatures.rb'
+require 'app/lib/signatures.rb'
 
-require 'app/ECS/entity_manager.rb'
+require 'app/lib/entity_manager.rb'
 
-require 'app/ECS/component_manager.rb'
-require 'app/ECS/base_component.rb'
-require_all 'ECS/components'
+require 'app/lib/component_manager.rb'
+require_all 'lib/components'
 
-require 'app/ECS/system_manager.rb'
-require_all 'ECS/systems'
+require 'app/lib/system_manager.rb'
+require_all 'lib/systems'
 
 require 'app/tick.rb'
 

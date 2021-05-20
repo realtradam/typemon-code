@@ -1,6 +1,6 @@
 class Components
   # A dragonruby label wrapper
-  class Label < BaseComponent
+  class Label < Helper::BaseComponent
 
     attr_accessor :x, :y, :text, :size_enum, :alignment_enum,
       :a, :r, :g, :b, :font, :vertical_alignment_enum

@@ -1,16 +1,10 @@
 class Components
   # If an entity can be rendered on screen
-  class Collidable < BaseComponent
-    class <<self
-      def add(entity_id)
-        super(entity_id)
-        #add to grid?
-      end
-    end
-    attr_accessor :grid
+  class Renderable < Helper::BaseComponent
+    attr_accessor :z
 
     def initialize
-      @grid = [[]]
+      @z = 0
     end
 
     def set(**opts)

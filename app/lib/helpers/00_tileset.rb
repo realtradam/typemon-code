@@ -6,8 +6,10 @@ class Helper
   class <<self
     attr_accessor :json_data
 
-    def get_json_tiles(json_name)
-      return nil if json_name == 'hitbox' && !Components::DebugSingleton.data
+    def get_json_tiles(json_name, hitbox: false)
+      unless hitbox
+        return nil if json_name == 'hitbox' && !Components::DebugSingleton.data
+      end
 
       if self.json_data[json_name].nil?
         self.json_data[json_name] = $gtk.parse_json_file "assets/json/#{json_name}.json"

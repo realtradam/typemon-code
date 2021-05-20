@@ -24,12 +24,20 @@ class ID
       0b0_100_000
     end
 
-    def level
+    def collidable
       0b0_001_000_000
     end
 
-    def collidable
+    def overworld
       0b0_010_000_000
+    end
+
+    def indoor
+      0b0_100_000_000
+    end
+
+    def battle
+      0b0_001_000_000_000
     end
   end
 end
