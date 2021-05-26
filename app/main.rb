@@ -3,23 +3,23 @@
 # replaces by require of each individual ruby file
 def require_all dir
   `ls #{dir}`.each_line do |file|
-    require "app/#{dir}/#{file.strip}"
+    require "#{dir}/#{file.strip}"
   end
 end
 
-require 'app/dragonruby-game-toolkit-contrib/dragon/grid.rb'
+require 'mygame/app/dragonruby-game-toolkit-contrib/dragon/grid.rb'
 
-require_all 'lib/helpers'
+require_all 'mygame/app/lib/FelFlame/helpers'
 
-require 'app/lib/signatures.rb'
+require 'mygame/app/lib/FelFlame/signatures.rb'
 
-require 'app/lib/entity_manager.rb'
+require 'mygame/app/lib/FelFlame/entity_manager.rb'
 
-require 'app/lib/component_manager.rb'
-require_all 'lib/components'
+require 'mygame/app/lib/FelFlame/component_manager.rb'
+require_all 'mygame/app/lib/FelFlame/components'
 
-require 'app/lib/system_manager.rb'
-require_all 'lib/systems'
+require 'mygame/app/lib/FelFlame/system_manager.rb'
+require_all 'mygame/app/lib/FelFlame/systems'
 
-require 'app/tick.rb'
+require 'mygame/app/tick.rb'
 
