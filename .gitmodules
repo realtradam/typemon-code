@@ -1,6 +1,3 @@
 [submodule "sprites/non-free"]
 	path = assets/non-free
 	url = gitea@git.tradam.fyi:tradam/pixel-assets-nonfree.git
-[submodule "app/lib/FelFlame"]
-	path = app/lib/FelFlame
-	url = gitea@git.tradam.fyi:tradam/FelFlame.git
